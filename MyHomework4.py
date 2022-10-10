@@ -38,3 +38,14 @@ k = int(input("Задайте натуральную степень: "))
 f = open("exam4.txt", "w")
 f.write(polynom(k))
 f.close
+
+задача 4. Задайте два числа. Напишите программу, которая найдёт НОК (наименьшее общее кратное) этих двух чисел.
+import math
+def nod(a, b):
+    print(math.gcd(a, b))
+if __name__ == "__main__":
+    a = int(input())
+    b = int(input())
+    nod(a, b)
+                          
+                          
