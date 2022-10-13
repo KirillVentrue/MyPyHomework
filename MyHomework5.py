@@ -1,3 +1,21 @@
+задача 1. Создайте программу для игры с конфетами человек против человека.
+start = True
+while start:
+    print("хотите сиграть в игру 'Кто последний возьмет конфету'? ответьте да или нет")
+    answer1 = input().lower()
+    if answer1 not in ("да", "нет"):
+        print("Введите только да или нет")
+        continue
+    if answer1 == "да":
+        print("Вы будете играть с 1.другом или 2. с ботом?")
+        answer2 = answer12()
+        if answer2 == "1":
+            t2.game_candies_bplayers()
+        else:
+            t2.game_candies_bot()
+    else:
+        start = False
+
 задача 2. Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 def code_RLE(text):
     if text == "":
